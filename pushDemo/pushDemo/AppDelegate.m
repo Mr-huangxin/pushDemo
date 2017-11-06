@@ -18,6 +18,7 @@
 
 #import "GeTuiSdk.h"
 #import "SpeakingManage.h"
+#import "VoicePlayerManager.h"
 
 @interface AppDelegate ()<GeTuiSdkDelegate>
 
@@ -175,12 +176,18 @@
         NSLog(@"后台收到推送");
     }else{
         //app前台 --- 根据Type判断是否播报语音
+        //这里要判断系统版本（>iOS10播报系统   <iOS10播放自定义的）
         NSData *jsonData = [payloadMsg dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *pushdic = [NSJSONSerialization JSONObjectWithData:jsonData
                                                                 options:NSJSONReadingMutableContainers
                                                                   error:nil];
+        //这里处理前台推送 需要播报的推送消息
         if ([pushdic[@"Type"] isEqualToString:@"1"]) {
-            [[SpeakingManage new] startSpeaking:pushdic[@"Content"]];
+            if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 10.0) {
+                [[SpeakingManage new] startSpeaking:pushdic[@"Content"]];
+            }else{
+                [[VoicePlayerManager sharePlayer] play];
+            }
         }
         
     }

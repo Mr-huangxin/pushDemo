@@ -23,10 +23,11 @@
     self.contentHandler = contentHandler;
     // copy发来的通知，开始做一些处理
     self.bestAttemptContent = [request.content mutableCopy];
+    self.bestAttemptContent.sound =  [UNNotificationSound defaultSound];
     
     // Modify the notification content here...
     //    self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [modified]", self.bestAttemptContent.title];
-    NSLog(@"userInfo----->%@",self.bestAttemptContent.userInfo[@"payload"]);
+    NSLog(@"userInfo----->%@",self.bestAttemptContent.userInfo);
     NSData *jsonData = [self.bestAttemptContent.userInfo[@"payload"] dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *pushdic = [NSJSONSerialization JSONObjectWithData:jsonData
                                                             options:NSJSONReadingMutableContainers
@@ -53,7 +54,7 @@
     //修改播放时的音量 根据自己的需要来定
     MPMusicPlayerController* musicController = [MPMusicPlayerController applicationMusicPlayer];
     ////0.0~1.0
-    musicController.volume = 0.7;
+    musicController.volume = 0.3;
     [synthsizer speakUtterance:utterance];
 }
 

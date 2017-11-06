@@ -25,7 +25,7 @@
     utterance.volume = 1;
     //修改播放时的音量
     MPMusicPlayerController* musicController = [MPMusicPlayerController applicationMusicPlayer];
-    musicController.volume = 0.7;
+    musicController.volume = 0.2;
     [synthsizer speakUtterance:utterance];
 }
 #pragma mark ----AVSpeechSynthesizerDelegate

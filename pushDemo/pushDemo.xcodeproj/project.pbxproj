@@ -27,8 +27,14 @@
 		2755A8E41F90B3130015C223 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8CA1F90B2320015C223 /* libz.tbd */; };
 		2755A8E51F90B31A0015C223 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8C81F90B22B0015C223 /* libsqlite3.tbd */; };
 		2755A8E61F90B3210015C223 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8CC1F90B2390015C223 /* libc++.tbd */; };
-		2755A8E71F90B3600015C223 /* libGeTuiSdk-1.6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8C61F90B17F0015C223 /* libGeTuiSdk-1.6.3.0.a */; };
 		2755A8EB1F90B8A10015C223 /* SpeakingManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2755A8EA1F90B8A10015C223 /* SpeakingManage.m */; };
+		27EE8CC01FB001D1000EAF7F /* libGeTuiSdk-1.6.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8C61F90B17F0015C223 /* libGeTuiSdk-1.6.3.0.a */; };
+		27EE8CC11FB00262000EAF7F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8CA1F90B2320015C223 /* libz.tbd */; };
+		27EE8CC21FB00275000EAF7F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8C81F90B22B0015C223 /* libsqlite3.tbd */; };
+		27EE8CC31FB0027A000EAF7F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2755A8DA1F90B2730015C223 /* UserNotifications.framework */; };
+		27EE8CC51FB005ED000EAF7F /* record_success.caf in Resources */ = {isa = PBXBuildFile; fileRef = 27EE8CC41FB005ED000EAF7F /* record_success.caf */; };
+		27EE8CC71FB0060A000EAF7F /* send.caf in Resources */ = {isa = PBXBuildFile; fileRef = 27EE8CC61FB00609000EAF7F /* send.caf */; };
+		27EE8CCA1FB00C49000EAF7F /* VoicePlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EE8CC91FB00C49000EAF7F /* VoicePlayerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +112,13 @@
 		2755A8E81F90B61E0015C223 /* pushDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pushDemo.entitlements; sourceTree = "<group>"; };
 		2755A8E91F90B8A10015C223 /* SpeakingManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeakingManage.h; sourceTree = "<group>"; };
 		2755A8EA1F90B8A10015C223 /* SpeakingManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeakingManage.m; sourceTree = "<group>"; };
+		27EE8CBA1FAFFEBD000EAF7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27EE8CBC1FAFFEDC000EAF7F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		27EE8CBD1FAFFEE4000EAF7F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		27EE8CC41FB005ED000EAF7F /* record_success.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_success.caf; sourceTree = "<group>"; };
+		27EE8CC61FB00609000EAF7F /* send.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = send.caf; sourceTree = "<group>"; };
+		27EE8CC81FB00C49000EAF7F /* VoicePlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoicePlayerManager.h; sourceTree = "<group>"; };
+		27EE8CC91FB00C49000EAF7F /* VoicePlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoicePlayerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2755A8E71F90B3600015C223 /* libGeTuiSdk-1.6.3.0.a in Frameworks */,
+				27EE8CC01FB001D1000EAF7F /* libGeTuiSdk-1.6.3.0.a in Frameworks */,
 				2755A8E61F90B3210015C223 /* libc++.tbd in Frameworks */,
 				2755A8E51F90B31A0015C223 /* libsqlite3.tbd in Frameworks */,
 				2755A8E41F90B3130015C223 /* libz.tbd in Frameworks */,
@@ -145,6 +158,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EE8CC31FB0027A000EAF7F /* UserNotifications.framework in Frameworks */,
+				27EE8CC21FB00275000EAF7F /* libsqlite3.tbd in Frameworks */,
+				27EE8CC11FB00262000EAF7F /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +201,12 @@
 				2755A8841F90B03A0015C223 /* ViewController.m */,
 				2755A8E91F90B8A10015C223 /* SpeakingManage.h */,
 				2755A8EA1F90B8A10015C223 /* SpeakingManage.m */,
+				27EE8CC81FB00C49000EAF7F /* VoicePlayerManager.h */,
+				27EE8CC91FB00C49000EAF7F /* VoicePlayerManager.m */,
 				2755A8861F90B03A0015C223 /* Main.storyboard */,
 				2755A8891F90B03A0015C223 /* Assets.xcassets */,
+				27EE8CC61FB00609000EAF7F /* send.caf */,
+				27EE8CC41FB005ED000EAF7F /* record_success.caf */,
 				2755A88B1F90B03A0015C223 /* LaunchScreen.storyboard */,
 				2755A88E1F90B03A0015C223 /* Info.plist */,
 				2755A88F1F90B03A0015C223 /* main.m */,
@@ -235,6 +255,9 @@
 		2755A8C71F90B22B0015C223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27EE8CBD1FAFFEE4000EAF7F /* CFNetwork.framework */,
+				27EE8CBC1FAFFEDC000EAF7F /* CoreFoundation.framework */,
+				27EE8CBA1FAFFEBD000EAF7F /* CoreGraphics.framework */,
 				2755A8DA1F90B2730015C223 /* UserNotifications.framework */,
 				2755A8D81F90B26D0015C223 /* CoreLocation.framework */,
 				2755A8D61F90B2630015C223 /* AVFoundation.framework */,
@@ -388,7 +411,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2755A88D1F90B03A0015C223 /* LaunchScreen.storyboard in Resources */,
+				27EE8CC51FB005ED000EAF7F /* record_success.caf in Resources */,
 				2755A88A1F90B03A0015C223 /* Assets.xcassets in Resources */,
+				27EE8CC71FB0060A000EAF7F /* send.caf in Resources */,
 				2755A8881F90B03A0015C223 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +449,7 @@
 				2755A8851F90B03A0015C223 /* ViewController.m in Sources */,
 				2755A8901F90B03A0015C223 /* main.m in Sources */,
 				2755A8EB1F90B8A10015C223 /* SpeakingManage.m in Sources */,
+				27EE8CCA1FB00C49000EAF7F /* VoicePlayerManager.m in Sources */,
 				2755A8821F90B03A0015C223 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -700,7 +726,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G77ZWT9JC6;
 				INFOPLIST_FILE = pushtest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -721,7 +747,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G77ZWT9JC6;
 				INFOPLIST_FILE = pushtest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
